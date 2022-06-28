@@ -65,8 +65,9 @@
 // )
 
 // render ReactDOM.render(<h1>Hello, React!</h1>, document.getElementById("root")) using vanilla js
+// imperative programing - say how everything should happen
 const rootNode = document.getElementById("root")
 const header = document.createElement("h1")
-const headerText = document.createTextNode("Hello, Vanilla JS!")
-header.appendChild(headerText)
+header.className = "header"
+header.textContent = "Hello, Vanilla JS!"
 rootNode.appendChild(header)
