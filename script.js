@@ -66,8 +66,28 @@
 
 // render ReactDOM.render(<h1>Hello, React!</h1>, document.getElementById("root")) using vanilla js
 // imperative programing - say how everything should happen
-const rootNode = document.getElementById("root")
-const header = document.createElement("h1")
-header.className = "header"
-header.textContent = "Hello, Vanilla JS!"
-rootNode.appendChild(header)
+// const rootNode = document.getElementById("root")
+// const header = document.createElement("h1")
+// header.className = "header"
+// header.textContent = "Hello, Vanilla JS!"
+// rootNode.appendChild(header)
+
+// JSX
+// const element = <h1 className="header">This is JSX</h1>
+// // outputs a js object
+// // react makes objects, dom elements are described
+// console.log(element)
+// // can only return one parent element - if need >1 elements, be sure to wrap in a div
+// ReactDOM.render(element, document.getElementById("root"))
+
+// make nav bar in JSX
+const element = <nav>
+    <h1>Website brand name here</h1>
+    <ul>
+        <li>Pricing</li>
+        <li>About</li>
+        <li>Contact</li>
+    </ul>
+</nav>
+
+ReactDOM.render(element, document.getElementById("root"))
