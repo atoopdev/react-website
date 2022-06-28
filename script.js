@@ -81,7 +81,7 @@
 // ReactDOM.render(element, document.getElementById("root"))
 
 // make nav bar in JSX
-const element = <nav>
+const navbar = <nav>
     <h1>Website brand name here</h1>
     <ul>
         <li>Pricing</li>
@@ -90,4 +90,4 @@ const element = <nav>
     </ul>
 </nav>
 
-ReactDOM.render(element, document.getElementById("root"))
+ReactDOM.render(navbar, document.getElementById("root"))
