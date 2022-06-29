@@ -1,3 +1,6 @@
+
+
+
 // what time render, where to render
 // ReactDOM.render(
 // <ul>
@@ -81,6 +84,7 @@
 // ReactDOM.render(element, document.getElementById("root"))
 
 // make nav bar in JSX
+// JSX returns plain js objects
 const navbar = <nav>
     <h1>Website brand name here</h1>
     <ul>
@@ -90,4 +94,6 @@ const navbar = <nav>
     </ul>
 </nav>
 
-ReactDOM.render(navbar, document.getElementById("root"))
+// ReactDOM.render(navbar, document.getElementById("root"))
+
+document.getElementById("root").append(navbar)
