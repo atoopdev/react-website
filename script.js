@@ -86,10 +86,8 @@
 // make nav bar in JSX
 // JSX returns plain js objects
 // use Pascal case
-function WebPage(){
+function Page(){
     return <div>
-    <img src="./react-logo.png" width="40px"></img>
-    <h1>Fun facts about React</h1>
     <ul>
         <li>Was first released in 2013</li>
         <li>Was originally created by Jordan Walke</li>
@@ -100,6 +98,24 @@ function WebPage(){
 </div>
 } 
 
+function Header(){
+    return <header>
+        <nav>
+        <img src="./react-logo.png" width="40px"></img>
+        <h1>Fun facts about React</h1>
+        </nav>
+    </header>
+    
+}
+
+function Footer(){
+    return <p>&copy; 2022 Toop development. All rights reserved.</p>
+}
+
 // functionmust be wrapped in </>
-ReactDOM.render(<WebPage />, document.getElementById("root"))
+ReactDOM.render(<div>
+    <Header /> 
+    <Page />
+    <Footer />
+    </div>, document.getElementById("root"))
 
