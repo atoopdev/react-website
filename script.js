@@ -109,7 +109,7 @@ function Header(){
 }
 
 function Footer(){
-    return <p>&copy; 2022 Toop development. All rights reserved.</p>
+    return <footer>&copy; 2022 Toop development. All rights reserved.</footer>
 }
 
 // functionmust be wrapped in </>
