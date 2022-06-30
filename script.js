@@ -85,7 +85,9 @@
 
 // make nav bar in JSX
 // JSX returns plain js objects
-const webpage = <div>
+// use Pascal case
+function WebPage(){
+    return <div>
     <img src="./react-logo.png" width="40px"></img>
     <h1>Fun facts about React</h1>
     <ul>
@@ -96,6 +98,8 @@ const webpage = <div>
         <li>Powers thousands of enterprise apps, including mobile apps.</li>
     </ul>
 </div>
+} 
 
-ReactDOM.render(webpage, document.getElementById("root"))
+// functionmust be wrapped in </>
+ReactDOM.render(<WebPage />, document.getElementById("root"))
 
