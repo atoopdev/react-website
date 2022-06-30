@@ -85,15 +85,17 @@
 
 // make nav bar in JSX
 // JSX returns plain js objects
-const navbar = <nav>
-    <h1>Website brand name here</h1>
+const webpage = <div>
+    <img src="./react-logo.png" width="40px"></img>
+    <h1>Fun facts about React</h1>
     <ul>
-        <li>Pricing</li>
-        <li>About</li>
-        <li>Contact</li>
+        <li>Was first released in 2013</li>
+        <li>Was originally created by Jordan Walke</li>
+        <li>Has well over 100K stars on Github</li>
+        <li>Is maintained by Facebook</li>
+        <li>Powers thousands of enterprise apps, including mobile apps.</li>
     </ul>
-</nav>
+</div>
 
-// ReactDOM.render(navbar, document.getElementById("root"))
+ReactDOM.render(webpage, document.getElementById("root"))
 
-document.getElementById("root").append(navbar)
