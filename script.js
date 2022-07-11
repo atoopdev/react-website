@@ -97,7 +97,7 @@ function Page(){
 function Header(){
     return <header>
         <nav className="nav">
-        <img src="./react-logo.png" width="40px"></img>
+        <img className="nav-logo" src="./react-logo.png"></img>
         <ul className="nav-items">
             <li>Pricing</li>
             <li>About</li>
@@ -122,7 +122,7 @@ function ListContent(){
 }
 
 function Footer(){
-    return <footer>&copy; 2022 Toop development. All rights reserved.</footer>
+    return <footer className="footer">&copy; 2022 Toop development. All rights reserved.</footer>
 }
 
 // functionmust be wrapped in </>
