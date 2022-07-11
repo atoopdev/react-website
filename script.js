@@ -109,7 +109,7 @@ function Header(){
 }
 
 function ListContent(){
-    return <div>
+    return <div className="listContent">
                 <h1>Fun facts about React</h1>
     <ul>
         <li>Was first released in 2013</li>

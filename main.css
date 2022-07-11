@@ -29,6 +29,10 @@ body {
   font-weight: 700;
 }
 
+.listContent {
+  width: 60%;
+  margin: 0 auto;
+}
 .footer {
   margin-top: 50px;
   text-align: center;
