@@ -88,6 +88,29 @@
 // use Pascal case
 function Page(){
     return <div>
+        <Header /> 
+        <ListContent />
+    <Footer />
+</div>
+} 
+
+function Header(){
+    return <header>
+        <nav className="nav">
+        <img src="./react-logo.png" width="40px"></img>
+        <ul className="nav-items">
+            <li>Pricing</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+        </nav>
+    </header>
+    
+}
+
+function ListContent(){
+    return <div>
+                <h1>Fun facts about React</h1>
     <ul>
         <li>Was first released in 2013</li>
         <li>Was originally created by Jordan Walke</li>
@@ -95,17 +118,7 @@ function Page(){
         <li>Is maintained by Facebook</li>
         <li>Powers thousands of enterprise apps, including mobile apps.</li>
     </ul>
-</div>
-} 
-
-function Header(){
-    return <header>
-        <nav>
-        <img src="./react-logo.png" width="40px"></img>
-        <h1>Fun facts about React</h1>
-        </nav>
-    </header>
-    
+    </div>
 }
 
 function Footer(){
@@ -114,8 +127,6 @@ function Footer(){
 
 // functionmust be wrapped in </>
 ReactDOM.render(<div>
-    <Header /> 
     <Page />
-    <Footer />
     </div>, document.getElementById("root"))
 
