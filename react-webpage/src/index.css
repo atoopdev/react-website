@@ -65,7 +65,7 @@ main{
 
 ul{ 
   margin-top: 46px;
-  list-style:none;
+  /* list-style:none; */
   max-width: 400px;
 }
 
@@ -75,11 +75,17 @@ li{
 }
 
 /* blue list bullets */
-ul li::before{
+/* ul li::before{
   content: "\2022";
   color:#61DAFB;
   font-weight: bold;
   display: inline-block;
   width: 1em;
   margin-left: -1em;
+} */
+
+/* new method */
+li::marker{
+  color: #61DAFB;
+  font-size: 1.4rem;
 }
