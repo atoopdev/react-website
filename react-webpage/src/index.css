@@ -4,7 +4,7 @@
 
 body {
   margin: 0;
-  background-color: rgb(43, 42, 42);
+  background-color: #282D35;
   font-family: 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -14,6 +14,7 @@ h1{
   margin: 0;
   font-size: 2.5rem;
   font-weight: 700;
+  letter-spacing: -0.05em;
 
 }
 
@@ -23,8 +24,8 @@ img{
 }
 
 header{
-  background-color: rgb(14, 13, 13);
-  color: #FFF;
+  background-color: #21222A;
+  color: #DEEBF8;
 }
 
 nav{
@@ -42,12 +43,12 @@ nav{
 }
 
 .header_logo{
-  height: 40px;
+  height: 30px;
   margin-right: 5px;
 }
 
 .txt_logo{
-  color: #00ccff;
+  color: #61DAFB;
   font-size: 1.5rem;
   font-weight: 700;
 }
@@ -58,12 +59,14 @@ nav{
 }
 
 main{
-  color: #FFF;
+  color: #DEEBF8;
   margin: 60px 40px;
 }
 
 ul{ 
+  margin-top: 46px;
   list-style:none;
+  max-width: 400px;
 }
 
 li{
@@ -74,7 +77,7 @@ li{
 /* blue list bullets */
 ul li::before{
   content: "\2022";
-  color:#00ccff;
+  color:#61DAFB;
   font-weight: bold;
   display: inline-block;
   width: 1em;
