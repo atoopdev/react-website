@@ -64,11 +64,9 @@ main{
   color: #DEEBF8;
   margin-top: 60px;
   margin-left: 40px;
-  background-image: url("../src/images/react-icon-small.png");
-  background-blend-mode:darken;
+  background-image: url("../src/images/react-icon-large.png");
   background-repeat:no-repeat;
-  background-position: 150% 50%;
-  background-size: 300px;
+  background-position: 100% 50%;
 }
 
 ul{ 
